@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PCRotaryWheel_Example', :exclusive => true do
+  pod 'PCRotaryWheel', :path => '../'
+end
+
+target 'PCRotaryWheel_Tests', :exclusive => true do
+  pod 'PCRotaryWheel', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
