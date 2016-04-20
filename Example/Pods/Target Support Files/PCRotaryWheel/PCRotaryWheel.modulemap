@@ -1,0 +1,6 @@
+framework module PCRotaryWheel {
+  umbrella header "PCRotaryWheel-umbrella.h"
+
+  export *
+  module * { export * }
+}

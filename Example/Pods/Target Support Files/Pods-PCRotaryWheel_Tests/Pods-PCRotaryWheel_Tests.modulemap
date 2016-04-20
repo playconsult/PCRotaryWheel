@@ -1,0 +1,6 @@
+framework module Pods_PCRotaryWheel_Tests {
+  umbrella header "Pods-PCRotaryWheel_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

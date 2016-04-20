@@ -1,0 +1,24 @@
+{
+  "name": "PCRotaryWheel",
+  "version": "0.1.0",
+  "summary": "A short description of PCRotaryWheel.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PCRotaryWheel",
+  "license": "MIT",
+  "authors": {
+    "Hannah Carney": "hannahcarneyart@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PCRotaryWheel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PCRotaryWheel/Classes/**/*",
+  "resource_bundles": {
+    "PCRotaryWheel": [
+      "PCRotaryWheel/Assets/*.png"
+    ]
+  }
+}

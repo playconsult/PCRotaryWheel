@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - PCRotaryWheel (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - PCRotaryWheel (from `../`)
+
+EXTERNAL SOURCES:
+  PCRotaryWheel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  PCRotaryWheel: 56f0ba52378894fb7154bfaac3d6dfc0b6a5a4a7
+
+COCOAPODS: 0.39.0
