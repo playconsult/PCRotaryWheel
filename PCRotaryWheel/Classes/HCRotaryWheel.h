@@ -13,6 +13,7 @@
 @protocol RotaryProtocol <NSObject>
 
 - (void) wheelDidChangeValue:(int)currentSector;
+
 @end
 
 
@@ -59,6 +60,8 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable float imageSpacing;
 @property (nonatomic) IBInspectable double minAlphavalue;
 @property (nonatomic) IBInspectable float maxAlphavalue;
+@property (nonatomic) BOOL turnOnColorForCurrent;
+@property (nonatomic) UIColor* colorForCurrent;
 
 -(void)rotate;
 -(void)getPlacement;

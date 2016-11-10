@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PCRotaryWheel"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "A Configurable rotary wheel that allows for 2-8 icons and laternating text."
 
 # This description is used to generate tags and improve search results.
@@ -22,16 +22,16 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/playconsult/PCRotaryWheel"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Hannah Carney" => "hannahcarneyart@gmail.com" }
+  s.author           = { "Hannah Carney" => "hannah@play-consult.co.uk" }
   s.source           = { :git => "https://github.com/playconsult/PCRotaryWheel.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/hannahcarneyart'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'PCRotaryWheel/Classes/**/*'
-  s.resource_bundles = {
-    'PCRotaryWheel' => ['PCRotaryWheel/Assets/*.png']
-  }
+  #  s.resource_bundles = {
+  #    'PCRotaryWheel' => ['PCRotaryWheel/Assets/*.png']
+  #  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

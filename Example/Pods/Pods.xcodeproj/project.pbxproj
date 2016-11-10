@@ -34,6 +34,7 @@
 		97749CDD1CC7B8AF00C4ABE2 /* RotarySector.m in Sources */ = {isa = PBXBuildFile; fileRef = 97749CD31CC7B8AF00C4ABE2 /* RotarySector.m */; };
 		97749CDE1CC7B8AF00C4ABE2 /* RotaryWheelControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 97749CD41CC7B8AF00C4ABE2 /* RotaryWheelControl.h */; };
 		97749CDF1CC7B8AF00C4ABE2 /* RotaryWheelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97749CD51CC7B8AF00C4ABE2 /* RotaryWheelControl.m */; };
+		9C1DC21D6FDFFDFD7A175D92 /* libPods-PCRotaryWheel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1449FAEBD2CDC63EBED888 /* libPods-PCRotaryWheel.a */; };
 		A38506CF4700DA06E89C871D8388D83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393D1A899C707F79A64672C46ED238F /* UIKit.framework */; };
 		A7F9AAC65FC2D87C34EA9D6A5ACB4401 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B58D5BA3EB09C98A4C815311C792DC /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A98C86C49F992813917A16F3AC9C79DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
@@ -100,9 +101,7 @@
 		4F88C74D733720F86716DAF1B048177E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		514E84653CD3E44065D5698D6BF517B6 /* PCRotaryWheel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PCRotaryWheel-umbrella.h"; sourceTree = "<group>"; };
 		561B00C22FB1E3E7D31E7BEB2FD4F332 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59C32247B7F702ADFB95EF47DCB86E19 /* Pods_PCRotaryWheel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCRotaryWheel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9BA27F62BB9905D6806022F19CF037 /* Pods-PCRotaryWheel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PCRotaryWheel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6C0A3F2410FD837AEEDC59B087B72773 /* Pods_PCRotaryWheel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCRotaryWheel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD9EBDCF7067F613B689BB4D2D7F07D /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		721CC07FAB91C1143E71B21BB3E20BC6 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		74867BFCF3F0475AEFA4CC5CEBACE300 /* PCRotaryWheel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PCRotaryWheel.xcconfig; sourceTree = "<group>"; };
@@ -124,6 +123,7 @@
 		97749CD31CC7B8AF00C4ABE2 /* RotarySector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotarySector.m; sourceTree = "<group>"; };
 		97749CD41CC7B8AF00C4ABE2 /* RotaryWheelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotaryWheelControl.h; sourceTree = "<group>"; };
 		97749CD51CC7B8AF00C4ABE2 /* RotaryWheelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotaryWheelControl.m; sourceTree = "<group>"; };
+		9E1449FAEBD2CDC63EBED888 /* libPods-PCRotaryWheel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PCRotaryWheel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424F4F575D99D40FD97CEF589E60A66 /* Pods-PCRotaryWheel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PCRotaryWheel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A5269CEF4E03E392BBAEFE4F3C77A0A2 /* Pods-PCRotaryWheel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PCRotaryWheel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AB7D8BF1211A507F233BBF759E74EF8A /* Pods-PCRotaryWheel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PCRotaryWheel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -151,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E7A7B33D32B0527EB9E9A3B7AEEE350 /* Foundation.framework in Frameworks */,
+				9C1DC21D6FDFFDFD7A175D92 /* libPods-PCRotaryWheel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				CD3FB7D37E46A5379C926728A416D78E /* iOS */,
+				9E1449FAEBD2CDC63EBED888 /* libPods-PCRotaryWheel.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,8 +216,6 @@
 				056D7397E09E4593F51BDB3F8D7A6B0B /* FBSnapshotTestCase.framework */,
 				FDB4B55ED03B18E47F4AC5EECD6D5E83 /* PCRotaryWheel.bundle */,
 				F538DE6AC05C9C3343E0480FD5553977 /* PCRotaryWheel.framework */,
-				59C32247B7F702ADFB95EF47DCB86E19 /* Pods_PCRotaryWheel_Example.framework */,
-				6C0A3F2410FD837AEEDC59B087B72773 /* Pods_PCRotaryWheel_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -457,17 +457,18 @@
 			);
 			name = "Pods-PCRotaryWheel_Example";
 			productName = "Pods-PCRotaryWheel_Example";
-			productReference = 59C32247B7F702ADFB95EF47DCB86E19 /* Pods_PCRotaryWheel_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		49D163076CB7AB6E579AF6505D76310F /* PCRotaryWheel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21BB1D3D4F0AB2C6914C12669BAA6766 /* Build configuration list for PBXNativeTarget "PCRotaryWheel" */;
 			buildPhases = (
+				9FBA848D94BC1BA559908875 /* [CP] Check Pods Manifest.lock */,
 				779244BFCE11A37D5B964184E6D58F6D /* Sources */,
 				177EB82134B3D422F13F1C1227F093D9 /* Frameworks */,
 				9DC85C3477BD1D4B5325D896530B1690 /* Resources */,
 				8371766E8B486CF3618B50B4C6441939 /* Headers */,
+				44FFBEFAAEA9BF283FCC6304 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -529,7 +530,6 @@
 			);
 			name = "Pods-PCRotaryWheel_Tests";
 			productName = "Pods-PCRotaryWheel_Tests";
-			productReference = 6C0A3F2410FD837AEEDC59B087B72773 /* Pods_PCRotaryWheel_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -541,7 +541,7 @@
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "_Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -579,6 +579,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44FFBEFAAEA9BF283FCC6304 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PCRotaryWheel/Pods-PCRotaryWheel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FBA848D94BC1BA559908875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6209507FAC44BDB67DE41480618B4BE5 /* Sources */ = {
@@ -1010,7 +1043,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "_Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552D02D5BA751AC2E8790D2811D496CA /* Debug */,

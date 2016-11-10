@@ -21,8 +21,6 @@
 
 HCRotaryWheel *wheel;
 
-static float minAlphavalue = 0.6;
-static float maxAlphavalue = 1.0;
 @synthesize numberOfSections = _numberOfSections;
 @synthesize sectorView = _sectorView;
 @synthesize startTransform;
@@ -34,7 +32,8 @@ static float maxAlphavalue = 1.0;
 @synthesize imageSize = _imageSize;
 @synthesize imageSpacing = _imageSpacing;
 @synthesize turnOnDropShadow = _turnOnDropShadow;
-
+@synthesize turnOnColorForCurrent;
+@synthesize  colorForCurrent;
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
@@ -54,12 +53,13 @@ static float maxAlphavalue = 1.0;
 
 -(void)initialSetup
 {
+    currentSector = 0;
     _background = [UIColor redColor];
     self.layer.contentsScale = [UIScreen mainScreen].scale;
     self.numberOfSections = 6;
     self.imageSize = 2.1;
     self.imageSpacing = 7.5;
-    self.minAlphavalue = 0.6;
+    self.minAlphavalue = 1.0;
     self.maxAlphavalue = 1.0;
     [[NSNotificationCenter defaultCenter]
      addObserver:self
@@ -101,11 +101,8 @@ static float maxAlphavalue = 1.0;
         im.layer.position = CGPointMake(container.bounds.size.width/2.0-container.frame.origin.x,
                                         container.bounds.size.height/2.0-container.frame.origin.y);
         im.transform = CGAffineTransformMakeRotation(angleSize*i + .8);
-        im.alpha = minAlphavalue;
+        im.alpha = self.minAlphavalue;
         im.tag = i;
-        if (i == 0) {
-            im.alpha = maxAlphavalue;
-        }
         // Set sector image
         double degrees = (360/(int)self.numberOfSections)/2;
         if (degrees >= 90)
@@ -131,11 +128,15 @@ static float maxAlphavalue = 1.0;
         NSString *rotaryName = [NSString stringWithFormat:@"rotaryImage%d", i + 1];
         NSString *rotaryColor = [NSString stringWithFormat:@"sectorViewColor%d",i + 1];
         self.sectorView.tag = i;
-        self.sectorView.backgroundColor = [UIColor greenColor];
         id rotaryNameValue = [self valueForKey:rotaryName];
         id rotaryColorValue = [self valueForKey:rotaryColor];
         [self.sectorView setValue:rotaryNameValue forKey:@"image"];
         [self.sectorView setValue:rotaryColorValue forKey:@"tintColor"];
+        if (i == 0) {
+            im.alpha = self.maxAlphavalue;
+            if (turnOnColorForCurrent) {
+                [self.sectorView setTintColor:colorForCurrent];}
+        }
         if (_turnOnDropShadow)
         {
             self.sectorView = [self turnOnIconDropShadow:self.sectorView];
@@ -177,7 +178,7 @@ static float maxAlphavalue = 1.0;
     NSLog(@"staring myTimer");
     [self.timer invalidate]; // kill old timer, if it exists
     //   Timer for rotating wheel
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:5.0
                                                   target:self
                                                 selector:@selector(rotate)
                                                 userInfo:nil
@@ -246,7 +247,21 @@ static float maxAlphavalue = 1.0;
     [self.delegate wheelDidChangeValue:currentSector];
     // Highlight selected sector
     UIImageView *im = [self getSectorByValue:currentSector];
-    im.alpha = maxAlphavalue;
+    
+    im.alpha = self.maxAlphavalue;
+    if (turnOnColorForCurrent) {
+        for (int i = 0; i < [imageArray count]; i++)
+        {
+            NSString *rotaryColor = [NSString stringWithFormat:@"sectorViewColor%d",i + 1];
+            id rotaryColorValue = [self valueForKey:rotaryColor];
+            RotaryImageView *imageView = [imageArray objectAtIndex:i];
+            [imageView setValue:rotaryColorValue forKey:@"tintColor"];
+        }
+        for (RotaryImageView *i in im.subviews)
+        {
+            [i setTintColor:colorForCurrent];
+        }
+    }
     [UIView commitAnimations];
 }
 
@@ -265,7 +280,7 @@ static float maxAlphavalue = 1.0;
                 {
                     view.transform = CGAffineTransformRotate(view.transform, valueForRotate);
                 }
-                im.alpha = minAlphavalue;
+                im.alpha = self.minAlphavalue;
                 [self getPlacement];
             }
         }
